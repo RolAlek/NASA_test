@@ -3,4 +3,5 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse('')
+    template_name = 'homepage/index.html'
+    return render(request, template_name)
